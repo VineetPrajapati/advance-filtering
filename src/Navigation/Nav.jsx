@@ -1,8 +1,19 @@
-import "./Nav.css"
+import "./Nav.css";
 const Nav = () => {
   return (
-    <div>Nav</div>
-  )
-}
+    <nav>
+      <div className="nav-container">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search your shoes..."
+        />
+      </div>
+      <div className="profile-container">
+        
+      </div>
+    </nav>
+  );
+};
 
-export default Nav
+export default Nav;
