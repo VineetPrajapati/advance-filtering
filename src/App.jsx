@@ -1,9 +1,14 @@
+import Navigation from "./Navigation/Nav";
+import Products from "./Products/Products";
+import Recommended from "./Recommended/Recommended";
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
-}
+    <>
+      <Navigation />
+      <Products />
+      <Recommended />
+    </>
+  );
+};
 
-export default App
+export default App;
