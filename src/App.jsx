@@ -28,7 +28,7 @@ const App = () => {
   };
 
   // --------Radio Filter--------
-  const handleCLick = (e) => {
+  const handleClick = (e) => {
     setSelectedCategory(e.target.value);
   };
 
@@ -71,9 +71,9 @@ const App = () => {
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Navigation />
-      <Recommended />
-      <Products />
+      <Navigation query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </>
   );
 };
